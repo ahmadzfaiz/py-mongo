@@ -20,7 +20,7 @@ jobs:
           python-version: '3.9'
 
       - name: Run Python script
-        run: python update_csv.py
+        run: python main.py
 
       - name: Commit and Push Changes
         run: |
