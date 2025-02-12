@@ -2,8 +2,11 @@ name: Update CSV File
 
 on:
   schedule:
-    - cron: "*/2 * * * *"  # Runs every 2 minutes
+    - cron: "0 * * * *"  # Runs every hour at minute 0
   workflow_dispatch:  # Allows manual triggering
+
+permissions:
+  contents: write  # ✅ Allow push access to the repository
 
 jobs:
   update-csv:
